@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  tag: "1.25"
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  host: dev.myapp.local
+
+config:
+  WELCOME_MSG: "Welcome to DEV environment"
+

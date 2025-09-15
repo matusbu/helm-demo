@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  tag: "1.25"
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  host: test.myapp.local
+
+config:
+  WELCOME_MSG: "Welcome to TEST environment"
+

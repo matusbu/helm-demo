@@ -1,0 +1,15 @@
+replicaCount: 3
+
+image:
+  tag: "1.26"
+
+service:
+  type: LoadBalancer
+
+ingress:
+  enabled: true
+  host: myapp.company.com
+
+config:
+  WELCOME_MSG: "Welcome to PROD environment"
+
